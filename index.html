@@ -23,6 +23,12 @@
       </div>
     </div>
     <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+    <div>
+	Click on the mic to start voice control
+	<button id="start_button" onclick="startButton(event)" >
+		<img alt="Start" id="start_img" src="http://www.google.com/intl/en/chrome/assets/common/images/content/mic.gif">
+	</button>
+    </div>
 
     <div class="game-container">
       <div class="game-message">
@@ -86,5 +92,6 @@
   <script src="js/local_score_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
+  <script src="js/voice_input_manager.js"></script>
 </body>
 </html>

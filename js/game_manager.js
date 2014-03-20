@@ -3,12 +3,15 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.inputManager = new InputManager;
   this.scoreManager = new ScoreManager;
   this.actuator     = new Actuator;
+  this.voicemanager = new VoiceInputManager;
 
   this.startTiles   = 2;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
+  this.voicemanager.on("move", this.move.bind(this));
+  this.voicemanager.on("restart", this.restart.bind(this));
 
   this.setup();
 }

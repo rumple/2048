@@ -22,6 +22,12 @@ h1.title {
   display: block;
   float: left; }
 
+#start_button {
+	border: 0;
+	background-color: transparent;
+	display: block;
+}
+
 @-webkit-keyframes move-up {
   0% {
     top: 25px;
